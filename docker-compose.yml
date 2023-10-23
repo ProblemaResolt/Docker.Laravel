@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+  web:
+    image: bitnami/laravel
+    container_name: laravel_container
+    ports:
+      - 8080:8080
+    volumes:
+      - ./src:/app
+
+  db:
+    container_name: mysql_container
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: example_db
+      MYSQL_USER: example_user
+      MYSQL_PASSWORD: example_user1234
+      TZ: 'Asia/Tokyo'
+    volumes:
+      - ./db/data:/var/lib/mysql
+    ports:
+      - 3306:3306
+
+  phpmyadmin:
+    container_name: phpmyadmin_container
+    image: phpmyadmin/phpmyadmin
+    environment:
+      - PMA_ARBITRARY=1
+      - PMA_HOSTS=db
+    ports:
+      - 3000:80
+    volumes:
+      - ./phpadmin/sessions:/sessions
