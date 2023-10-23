@@ -37,3 +37,12 @@ cd /app
 ````
 php artisan migrate
 ````
+## PHP ADMIN
+http://localhost:3000/
+
+## breeze install
+````
+docker-compose exec web composer require laravel/breeze --dev
+docker-compose exec web php artisan breeze:install
+docker-compose exec web php artisan migrate
+````
