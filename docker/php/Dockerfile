@@ -7,6 +7,10 @@ RUN mv composer.phar /usr/local/bin/composer
 # install packages
 RUN apk update
 RUN apk add git nodejs npm
+RUN npm install -g yarn
+RUN yarn init -y
+RUN yarn add vite react axios sass
+RUN yarn
 
 # install php extensions
 RUN docker-php-ext-install pdo pdo_mysql
