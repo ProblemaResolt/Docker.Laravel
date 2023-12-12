@@ -29,9 +29,14 @@ Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('/test', function () {
-    return Inertia::render('test');
-})->middleware(['auth', 'verified'])->name('test');
+Route::get('/attendance', function () {
+    return Inertia::render('Attendance');
+})->middleware(['auth', 'verified'])->name('attendance');
+
+Route::get('/employees', function () {
+    return Inertia::render('Employees');
+})->middleware(['auth', 'verified'])->name('employees');
+
 
 
 Route::middleware('auth')->group(function () {
