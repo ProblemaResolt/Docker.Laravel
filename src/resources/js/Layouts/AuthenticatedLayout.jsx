@@ -26,19 +26,19 @@ export default function Authenticated({ user, header, children }) {
                                     href={route("dashboard")}
                                     active={route().current("dashboard")}
                                 >
-                                    Dashboard
+                                    勤務時間一覧
                                 </NavLink>
                                 <NavLink
                                     href={route("attendance")}
                                     active={route().current("attendance")}
                                 >
-                                    Attendance
+                                    出勤打刻
                                 </NavLink>
                                 <NavLink
                                     href={route("employees")}
                                     active={route().current("employees")}
                                 >
-                                    Employees
+                                    社員一覧
                                 </NavLink>
                             </div>
                         </div>
@@ -142,19 +142,19 @@ export default function Authenticated({ user, header, children }) {
                             href={route("dashboard")}
                             active={route().current("dashboard")}
                         >
-                            Dashboard
+                            勤務時間一覧
                         </ResponsiveNavLink>
                         <ResponsiveNavLink
                             href={route("attendance")}
                             active={route().current("attendance")}
                         >
-                            Attendance
+                            出勤打刻
                         </ResponsiveNavLink>
                         <ResponsiveNavLink
                             href={route("employees")}
                             active={route().current("employees")}
                         >
-                            Employees
+                            社員一覧
                         </ResponsiveNavLink>
                     </div>
 

@@ -49,6 +49,55 @@ const columns = [
 
 const rows = [
     {
+        id: 13,
+        monthDay: "11月07日",
+        attendance: "09:00",
+        leavingTime: "18:00",
+        breakTime: "01:00",
+    },
+    {
+        id: 12,
+        monthDay: "11月06日",
+        attendance: "09:00",
+        leavingTime: "18:00",
+        breakTime: "01:00",
+    },
+    {
+        id: 11,
+        monthDay: "11月05日",
+        attendance: "09:00",
+        leavingTime: "18:00",
+        breakTime: "01:00",
+    },
+    {
+        id: 10,
+        monthDay: "11月04日",
+        attendance: "09:00",
+        leavingTime: "18:00",
+        breakTime: "01:00",
+    },
+    {
+        id: 9,
+        monthDay: "11月03日",
+        attendance: "09:00",
+        leavingTime: "18:00",
+        breakTime: "01:00",
+    },
+    {
+        id: 8,
+        monthDay: "11月02日",
+        attendance: "09:00",
+        leavingTime: "18:00",
+        breakTime: "01:00",
+    },
+    {
+        id: 7,
+        monthDay: "11月01日",
+        attendance: "09:00",
+        leavingTime: "18:00",
+        breakTime: "01:00",
+    },
+    {
         id: 6,
         monthDay: "10月31日",
         attendance: "09:00",
@@ -147,7 +196,21 @@ export default function Dashboard({ auth }) {
                                                     id="modal-modal-description"
                                                     sx={{ mt: 2 }}
                                                 >
+                                                    <form>
+                                                    <h3>有給申請</h3>
+                                                    <p>
+                                                        時間
+                                                    </p>
                                                     <Button variant="contained">申請する</Button>
+                                                    </form>
+                                                    <hr/>
+                                                    <form>
+                                                    <h3>交通費申請</h3>
+                                                    <p>
+                                                        時間
+                                                    </p>
+                                                    <Button variant="contained">申請する</Button>
+                                                    </form>
                                                     
                                                 </Typography>
                                             </Box>
